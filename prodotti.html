@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti - Mare Fresco</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header semplificato per le pagine prodotti -->
+    <header class="header-marino" style="min-height: 200px; padding: 2rem;">
+        <div class="header-content">
+            <h1 id="titoloCategoria" class="titolo-principale" style="font-size: 2.5rem;">
+                <!-- Il titolo verrà inserito dinamicamente da JavaScript -->
+            </h1>
+        </div>
+    </header>
+
+    <!-- Contenuto prodotti -->
+    <main class="prodotti-container">
+        <!-- Breadcrumb e pulsante torna -->
+        <div class="breadcrumb">
+            <span>🏠</span>
+            <span>Mare Fresco</span>
+            <span>></span>
+            <span>Catalogo</span>
+        </div>
+        
+        <button class="btn-torna" onclick="tornaAlCatalogo()">
+            ← Torna al Catalogo
+        </button>
+
+        <!-- Griglia prodotti -->
+        <div class="prodotti-griglia" id="containerProdotti">
+            <!-- I prodotti verranno inseriti dinamicamente da JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-marino">
+        <div class="footer-content">
+            <div class="footer-info">
+                <h3>🐟 Mare Fresco</h3>
+                <p>Dal 1985 portiamo sulla vostra tavola il meglio del mare</p>
+            </div>
+            <div class="footer-contatti">
+                <h4>Contatti</h4>
+                <p>📧 info@marefresco.it</p>
+                <p>📞 +39 0123 456789</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mare Fresco - Tutti i diritti riservati</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
